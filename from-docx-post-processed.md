@@ -980,7 +980,7 @@ for above guidance.
 
 # 1 Introduction
 
-\<mark>[All text is normative unless otherwise labeled</mark>\]
+\[<mark>All text is normative unless otherwise labeled</mark>\]
 
 ## 1.0 Intellectual property rights policy
 
@@ -1308,7 +1308,7 @@ about the Disallowed Unicode code points.
 
 ## 1.4 Normative references
 
-[\[Required section.\]]{.mark}
+<mark>\[Required section.\]</mark>
 
 <mark>This appendix contains the normative and informative references that
 are used in this document.</mark>
@@ -1324,11 +1324,11 @@ an Informative Reference.</mark>
 
 <mark>For all References -- Normative and Informative:</mark>
 
-[Recommended approach: Set up **\[Reference\]** label elements as
+<mark>Recommended approach: Set up **\[Reference\]** label elements as
 \"Bookmarks\", then create hyperlinks to them within the document at
 locations from which the references are cited. Citations in the body of
 the text should be hyperlinked to the appropriate Reference entry, not
-directly to targets which are not a part of this Work Product.]{.mark}
+directly to targets which are not a part of this Work Product.</mark>
 
 <mark>The proper format for citation of technical work produced by an OASIS
 TC (whether Standards Track or Non-Standards Track) is:</mark>
@@ -1365,15 +1365,15 @@ https://docs.oasis-open.org/office/v1.2/OpenDocument-v1.2.html.</mark>
 <mark>For references to IETF RFCs, use the approved citation formats
 at:</mark>
 
-[[[https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html]{.underline}](https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html).]{.mark}
+<mark>[[https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html]{.underline}](https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html).</mark>
 
-[The most recent IETF RFC references are listed by the IETF at
-[[https://www.rfc-editor.org/in-notes/rfc-ref.txt]{.underline}](https://www.rfc-editor.org/in-notes/rfc-ref.txt).]{.mark}
+<mark>The most recent IETF RFC references are listed by the IETF at
+[[https://www.rfc-editor.org/in-notes/rfc-ref.txt]{.underline}](https://www.rfc-editor.org/in-notes/rfc-ref.txt).</mark>
 
 <mark>For references to W3C Recommendations, use the approved citation
 formats at:</mark>
 
-[[[https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html]{.underline}](https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html).]{.mark}
+<mark>[[https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html]{.underline}](https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html).</mark>
 
 <mark>Remove this note before submitting for publication.</mark>
 
@@ -1386,9 +1386,9 @@ Levels\", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997,
 
 [\[RFC8174\]]{.mark}
 
-[Leiba, B., \"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key
+<mark>Leiba, B., \"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key
 Words\", BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017,
-\<[[https://www.rfc-editor.org/info/rfc8174]{.underline}](https://www.rfc-editor.org/info/rfc8174)\>.]{.mark}
+\<[[https://www.rfc-editor.org/info/rfc8174]{.underline}](https://www.rfc-editor.org/info/rfc8174)\>.</mark>
 
 **\[RFC3629\]**
 
@@ -1414,16 +1414,16 @@ The Unicode Consortium. The Unicode Standard,
 
 [\[RFC3552\]]{.mark}
 
-[Rescorla, E. and B. Korver, \"Guidelines for Writing RFC Text on
+<mark>Rescorla, E. and B. Korver, \"Guidelines for Writing RFC Text on
 Security Considerations\", BCP 72, RFC 3552, DOI 10.17487/RFC3552, July
 2003,
-\<[[https://www.rfc-editor.org/info/rfc3552]{.underline}](https://www.rfc-editor.org/info/rfc3552)\>.]{.mark}
+\<[[https://www.rfc-editor.org/info/rfc3552]{.underline}](https://www.rfc-editor.org/info/rfc3552)\>.</mark>
 
-[\[Reference\]]{.mark}
+<mark>\[Reference\]</mark>
 
-[\[Full reference citation\]]{.mark}
+<mark>\[Full reference citation\]</mark>
 
-## 1.6 MQTT For Sensor Networks (MQTT-SN) 
+## 1.6 MQTT For Sensor Networks (MQTT-SN)
 
 Sensor Networks are simple, low cost and easy to deploy. They are
 typically used to provide event detection, monitoring, automation,
@@ -1544,13 +1544,13 @@ have any length in the range 0 to 65,535 bytes.
 
 ![](media/image16.png){width="6.5in" height="1.0277777777777777in"}
 
-[The character data in a UTF-8 Encoded String MUST be well-formed UTF-8
+<mark>The character data in a UTF-8 Encoded String MUST be well-formed UTF-8
 as defined by the Unicode
 specification [\[Unicode\]](https://docs.oasis-open.org/mqtt/mqtt/v5.0/cos02/mqtt-v5.0-cos02.html#Unicode) and
 restated in RFC
 3629 [\[RFC3629\]](https://docs.oasis-open.org/mqtt/mqtt/v5.0/cos02/mqtt-v5.0-cos02.html#RFC3629).
 In particular, the character data MUST NOT include encodings of code
-points between U+D800 and U+DFFF]{.mark} \[MQTT-SN-1.7.4-1\].
+points between U+D800 and U+DFFF</mark> \[MQTT-SN-1.7.4-1\].
 
 If the Client or Server receives an MQTT-SN Control Packet containing
 ill-formed UTF-8 it is a Malformed Packet. Refer to [[4.12 Handling
@@ -2386,7 +2386,7 @@ field in the CONNACK Packet response</mark> \[MQTT-SN-3.1.2.7-2\].
 MUST NOT include a Sleep Duration in the SLEEPRESP Packet</mark>
 \[MQTT-SN-3.1.2.7-3\].
 
-### 3.1.3 Will Flags 
+### 3.1.3 Will Flags
 
 <mark>If the Will Flag is set to 0, the Will Flags MUST NOT be present in the
 Packet</mark> \[MQTT-SN-3.1.3-1\].
@@ -2480,19 +2480,19 @@ Control Packets, the Client MUST send a PINGREQ packet</mark>
 > Alive value, and check for a corresponding PINGRESP to determine that
 > the network and the Server are available.
 
-[If the Server does not receive an MQTT-SN Control Packet from the
+<mark>If the Server does not receive an MQTT-SN Control Packet from the
 Client within one and a half times the Keep Alive time period, it MUST
 delete the Virtual Connection and move the Client to the Disconnected
-state (see [[4.14 Client states]{.underline}](#client-states))]{.mark}
+state (see [[4.14 Client states]{.underline}](#client-states))</mark>
 \[MQTT-SN-3.1.6-2\].
 
-[If a Client does not receive a PINGRESP packet within a *[Retry
+<mark>If a Client does not receive a PINGRESP packet within a *[Retry
 Interval]{.underline}* amount of time after it has sent a PINGREQ, it
 SHOULD retry the transmission according to [[4.4.2 Unacknowledged
 Packets]{.underline}](#unacknowledged-packets) up to the maximum number
 of attempts. If a PINGRESP is still not received it MUST delete the
 Virtual Connection to the Server by way of a DISCONNECT, with the
-understanding that the Server may no longer be reachable]{.mark}
+understanding that the Server may no longer be reachable</mark>
 \[MQTT-SN-3.1.6-3\].
 
 > **Informative Comment**
@@ -2614,7 +2614,7 @@ Connection is deleted if the Session Expiry Interval is greater than
 > The Client should always use the Session Present flag in the CONNACK
 > to determine whether the Server has a Session State for this Client.
 
-### 3.1.10 Will Topic Alias or Will Topic Name Length 
+### 3.1.10 Will Topic Alias or Will Topic Name Length
 
 If the Will Flag is set to 1, the Will Topic Alias or Will Topic Name
 Length is the next field in the Packet. In both cases, this is two
@@ -2627,9 +2627,9 @@ will be the value used as the Will Topic Alias.
 ### 3.1.11 Will Topic Name
 
 If the Will Flag is set to 1 and the Will Topic Type is set to Topic
-Name (0b11), the Will Topic Name is the next field in the Packet. [The
+Name (0b11), the Will Topic Name is the next field in the Packet. <mark>The
 Will Topic Name MUST be a UTF-8 Encoded String as defined in [[1.7.4
-UTF-8 Encoded String]{.underline}](#utf-8-encoded-string)]{.mark}
+UTF-8 Encoded String]{.underline}](#utf-8-encoded-string)</mark>
 \[MQTT-SN-3.1.11-1\].
 
 ### 3.1.12 Will Payload Length
@@ -2729,11 +2729,11 @@ Note that a Server MAY support multiple protocols on the same network
 endpoint. If the Server determines that the protocol is MQTT-SN 2.0 then
 it validates the connection attempt as follows.
 
-1.  [The Server MUST validate that the CONNECT packet matches the format
+1.  <mark>The Server MUST validate that the CONNECT packet matches the format
     described in [[3.1
     CONNECT]{.underline}](#connect---connection-request) and MUST NOT
     create a Virtual Connection for this CONNECT if it does not
-    match]{.mark} \[MQTT-SN-3.1.19-1\]. The Server MAY send a CONNACK
+    match<mark> \[MQTT-SN-3.1.19-1\]. The Server MAY send a CONNACK
     with a Reason Code of 0x80 or greater as described in [[4.12
     Handling errors]{.underline}](#handling-errors).
 
@@ -2748,18 +2748,18 @@ it validates the connection attempt as follows.
 
 If validation is successful, the Server performs the following steps.
 
-1.  [If the Client Identifier represents a Client already connected to
+1.  <mark>If the Client Identifier represents a Client already connected to
     the Server, the Server sends a DISCONNECT packet to the existing
     Client with Reason Code of 0x8E (Session taken over) as described in
     [[4.12 Handling errors]{.underline}](#handling-errors) and MUST
-    delete the Virtual Connection of the existing Client]{.mark}
+    delete the Virtual Connection of the existing Client]</mark>
     \[MQTT-SN-3.1.19-3\]. If the existing Client has a Will Message,
     that Will Message is published as described in [[3.4.3 Will
     Flags]{.underline}](#will-flags).
 
-2.  [The Server MUST perform the processing of Clean Start that is
+2.  <mark>The Server MUST perform the processing of Clean Start that is
     described in [[3.1.2.1 Clean Start
-    Flag]{.underline}](#clean-start-flag)]{.mark} \[MQTT-SN-3.1.19-4\].
+    Flag]{.underline}](#clean-start-flag)</mark> \[MQTT-SN-3.1.19-4\].
 
 3.  <mark>The Server MUST acknowledge the CONNECT packet with a CONNACK
     packet containing a 0x00 (Success) Reason Code</mark>
@@ -2786,7 +2786,7 @@ Code before sending any packet that needs a Virtual Connection</mark>
 CONNECT packet and before the CONNACK response is sent, except AUTH
 packets</mark> \[MQTT-SN-3.1.19-7\].
 
-##  
+## 
 
 ## 3.2 CONNACK - Connect Acknowledgement
 
@@ -2864,7 +2864,7 @@ Interval MUST NOT be present in the Packet</mark>
 <mark>If the Session Expiry Interval Flag is set to 1, a Session Expiry
 Interval MUST be present in the Packet</mark> \[MQTT-SN-3.2.2.2-2\].
 
-#### 3.2.2.3 Server Keep Alive Flag 
+#### 3.2.2.3 Server Keep Alive Flag
 
 **Position**: bit 2 of the CONNACK Flags. Labelled *Server KA* in Figure
 3-6.
@@ -3127,7 +3127,7 @@ the Packet</mark> \[MQTT-SN-3.4.2.1-2\].
 Used to identify the corresponding REGACK packet. It should ideally be
 populated with a random Two Byte Integer value.
 
-### 3.4.3 Topic Alias 
+### 3.4.3 Topic Alias
 
 Contains the Topic Alias value assigned to the Topic Name included in
 the Topic Name field.
@@ -3728,7 +3728,7 @@ use one of the Reason Codes applicable to PUBREL</mark>
 As described in [[4.3.4 QoS 2: Exactly once
 delivery]{.underline}](#qos-2-exactly-once-delivery).
 
-###  
+### 
 
 ### 3.6.7 PUBCOMP - Publish Complete (QoS 2 delivery part 3)
 
@@ -4285,7 +4285,7 @@ Values can be:
 
 ## 
 
-##  
+## 
 
 ## 3.13 DISCONNECT - Disconnect Notification
 
@@ -4330,7 +4330,7 @@ are reserved and MUST be set to 0</mark> \[MQTT-SN-3.13.2-1\].
 packet are set to 0. If any of the reserved flags is not 0 it is a
 Malformed Packet</mark> \[MQTT-SN-3.13.2-2\].
 
-#### 3.13.2.1 Packet Identifier Flag 
+#### 3.13.2.1 Packet Identifier Flag
 
 **Position:** bit 0 of the DISCONNECT Flags. Labelled *PacketId* in
 Figure 3-27.
@@ -5031,7 +5031,7 @@ Authentication Tag Length. Its content authenticates ALL the preceding
 fields and is obtained on the basis of the protection scheme selected in
 the Protection Scheme field.
 
-##  
+## 
 
 ## 3.18 Connection Encapsulation
 
@@ -6310,12 +6310,12 @@ the CONNACK packets.
 To begin authentication, the Client sets the AUTH flag in the CONNECT
 packet and includes an Authentication Method and optionally Data,
 depending on the Authentication Method, used in the CONNECT packet. This
-specifies the authentication method to use and its parameters. [If the
+specifies the authentication method to use and its parameters. <mark>If the
 Server does not support the Authentication Method supplied by the
 Client, it MAY send a CONNACK with a Reason Code of 0x8C (Bad
 authentication method) or 0x87 (Not Authorized) as described in [[2.3
 Reason Code]{.underline}](#reason-code) and MUST delete the Virtual
-Connection]{.mark} \[MQTT-SN-4.11.1-1\].
+Connection</mark> \[MQTT-SN-4.11.1-1\].
 
 The Authentication Method is an agreement between the Client and Server
 about the meaning of the data sent in the Authentication Data and
@@ -6356,10 +6356,10 @@ to the Client, it is sent in the Authentication Data field of the
 CONNACK packet.
 
 The Client can terminate the Virtual Connection at any point in this
-process by sending a DISCONNECT packet. [The Server can reject the
+process by sending a DISCONNECT packet. <mark>The Server can reject the
 authentication at any point in this process. It MUST send a CONNACK with
 a Reason Code of 0x80 or above as described in [[4.12 Handling
-errors]{.underline}](#handling-errors)]{.mark} \[MQTT-SN-4.11.1-4\].
+errors]{.underline}](#handling-errors)</mark> \[MQTT-SN-4.11.1-4\].
 
 <mark>If the initial CONNECT packet included an Authentication Method then
 all AUTH packets, and any successful CONNACK packet MUST include an
@@ -6430,10 +6430,10 @@ sending an AUTH packet with a Reason Code of 0x18 (Continue
 authentication). This flow continues as with the original authentication
 until the re-authentication is complete or the re-authentication fails.
 
-[If the re-authentication fails, the Client or Server MUST send
+<mark>If the re-authentication fails, the Client or Server MUST send
 DISCONNECT with an appropriate Reason Code as described in [[4.12
 Handling errors]{.underline}](#handling-errors), and MUST delete the
-Virtual Connection]{.mark} \[MQTT-SN-4.11.1.1-2\].
+Virtual Connection<mark> \[MQTT-SN-4.11.1.1-2\].
 
 During this re-authentication sequence, the flow of other packets
 between the Client and Server is paused, pending the new authentication
@@ -6872,11 +6872,11 @@ honored - a full packet interaction MUST take place including all
 normative phases of acknowledgement, including any associated
 retransmission logic</mark> \[MQTT-SN-4.14.2-5\].
 
-[If, during the delivery of Application Messages from the Server to the
+<mark>If, during the delivery of Application Messages from the Server to the
 Client, and applying the [[retry
 logic]{.underline}](#unacknowledged-packets), the Server gets no
 response, it MUST consider the Client disconnected and delete the
-Virtual Connection]{.mark} \[MQTT-SN-4.14.2-6\]. <mark>I</mark>t may send a
+Virtual Connection</mark> \[MQTT-SN-4.14.2-6\]. <mark>I</mark>t may send a
 DISCONNECT packet with an appropriate Reason Code.
 
 The transfer of packets to the Client is closed by the Server by means
@@ -8790,7 +8790,7 @@ in [[C.4 Exponential Backoff]{.underline}](#c.4-exponential-backoff).
 
 # <mark>Appendix D. Revision History (informative)</mark>
 
-[\[Optional section.\]]{.mark}
+<mark>\[Optional section.\]</mark>
 
 <mark>Revisions made since the initial stage of this numbered Version of this
 document may be tracked here.</mark>
