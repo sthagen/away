@@ -1,5 +1,5 @@
 # Marks
 
-We <span style="background-color:yellow;">highlight some regions in the text</span>, but not all regions of course.
-As an example, $${\textrm\color{yellow}\text{this region here is}}$$ using LaTeX awkwardly, and then
-the following highlights are trying the <code style="background-color:yellow;">HTML code element</code>, yet are fully casual.
+We highlight some regions in the text, but not all regions of course.
+As an example, $${\large\textsf{\color{orangered}this region here is}}$$ using LaTeX awkwardly, and then
+at least we can show highlighted regions per the text color.
