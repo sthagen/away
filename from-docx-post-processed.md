@@ -1322,7 +1322,7 @@ section below. Each reference to a separate document or artifact in this
 work must be listed here and must be identified as either a Normative or
 an Informative Reference.</mark>
 
-<mark>For all References -- Normative and Informative:</mark>
+<mark title="Does this title pop up as standard tooltip?">For all References -- Normative and Informative:</mark>
 
 <mark>Recommended approach: Set up **\[Reference\]** label elements as
 \"Bookmarks\", then create hyperlinks to them within the document at
