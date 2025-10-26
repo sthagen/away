@@ -4432,22 +4432,12 @@ The following timers are used by Servers, on a per Client basis, to handle Clien
 
 *Figure 4-8 -- Session Timers*
 
-+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------------------------------+
-| **Timer Name**              | **State(s)**                | **Timeout State**           | **Defined in**              | **Information**                             |
-+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------------------------------+
-| Keep Alive                  | Active                      | Disconnected                | CONNECT                     | [[3.1.6 Keep                                |
-|                             |                             |                             |                             | Alive]](#keep-alive)            |
-+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------------------------------+
-| Sleep Duration              | Asleep                      | Disconnected                | SLEEPREQ                    | [[4.14.2 Sleeping                           |
-|                             |                             |                             |                             | Clients]](#sleeping-clients)    |
-+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------------------------------+
-| Session Expiry              | Disconnected                | None                        | CONNECT, DISCONNECT         | [[4.1.1 Storing Session                     |
-|                             |                             |                             |                             | State]](#storing-session-state) |
-+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------------------------------+
-| Retry                       | Active, Awake,              | Disconnected                | Sender                      | [[4.4 Packet delivery                       |
-|                             |                             |                             |                             | retry]](#packet-delivery-retry) |
-|                             | Asleep                      |                             | configuration               |                                             |
-+=============================+=============================+=============================+=============================+=============================================+
+| Timer Name     | State(s)              | Timeout State | Defined in           | Information                                              |
+|:---------------|:----------------------|:--------------|:---------------------|:---------------------------------------------------------|
+| Keep Alive     | Active                | Disconnected  | CONNECT              | \[[3.1.6 Keep Alive](#keep-alive)]                       |
+| Sleep Duration | Asleep                | Disconnected  | SLEEPREQ             | \[[4.14.2 Sleeping Clients](#sleeping-clients)]          |
+| Session Expiry | Disconnected          | None          | CONNECT, DISCONNECT  | \[[4.1.1 Storing Session State](#storing-session-state)] |
+| Retry          | Active, Awake, Asleep | Disconnected  | Sender configuration | \[[4.4 Packet delivery retry](#packet-delivery-retry)]   |
 
 For example values of these timers, see [[C.3 Example Timer and Counter Values]](#c.3-example-timer-and-counter-values).
 
