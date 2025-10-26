@@ -1114,7 +1114,7 @@ The Unicode Consortium. The Unicode Standard,
 
 <mark title="Ephemeral region marking">\[Full reference citation\]</mark>
 
-## 1.6 MQTT For Sensor Networks (MQTT-SN) 
+## 1.6 MQTT For Sensor Networks (MQTT-SN)
 
 Sensor Networks are simple, low cost and easy to deploy. They are typically used to provide event detection, monitoring, automation, process control and more. Sensor Networks often comprise many battery-powered sensors and actuators, each containing a limited amount of storage and processing capability. They usually communicate wirelessly.
 
@@ -1753,7 +1753,7 @@ for the Virtual Connection.
 
 «<mark title="Requirement MQTT-SN-3.1.2.7-3"><a name="MQTT-SN-3.1.2.7-3"></a>If this flag is set to 0 for the current Virtual Connection, the Server MUST NOT include a Sleep Duration in the SLEEPRESP Packet</mark>»\[MQTT‑SN‑3.1.2.7‑3].
 
-### 3.1.3 Will Flags 
+### 3.1.3 Will Flags
 
 «<mark title="Requirement MQTT-SN-3.1.3-1"><a name="MQTT-SN-3.1.3-1"></a>If the Will Flag is set to 0, the Will Flags MUST NOT be present in the Packet</mark>»\[MQTT‑SN‑3.1.3‑1].
 
@@ -1884,7 +1884,7 @@ If the Session Expiry Interval is 0xFFFFFFFF (UINT_MAX), the Session does not ex
 >
 > The Client should always use the Session Present flag in the CONNACK to determine whether the Server has a Session State for this Client.
 
-### 3.1.10 Will Topic Alias or Will Topic Name Length 
+### 3.1.10 Will Topic Alias or Will Topic Name Length
 
 If the Will Flag is set to 1, the Will Topic Alias or Will Topic Name Length is the next field in the Packet. In both cases, this is two bytes.
 
@@ -1972,7 +1972,7 @@ If validation is successful, the Server performs the following steps.
 
 «<mark title="Requirement MQTT-SN-3.1.19-7"><a name="MQTT-SN-3.1.19-7"></a>The Server MUST NOT process any data sent by the Client after the CONNECT packet and before the CONNACK response is sent, except AUTH packets</mark>»\[MQTT‑SN‑3.1.19‑7].
 
-##  
+## 
 
 ## 3.2 CONNACK - Connect Acknowledgement
 
@@ -2018,7 +2018,7 @@ If the value of Session Present received by the Client from the Server is not as
 
 «<mark title="Requirement MQTT-SN-3.2.2.2-2"><a name="MQTT-SN-3.2.2.2-2"></a>If the Session Expiry Interval Flag is set to 1, a Session Expiry Interval MUST be present in the Packet</mark>»\[MQTT‑SN‑3.2.2.2‑2].
 
-#### 3.2.2.3 Server Keep Alive Flag 
+#### 3.2.2.3 Server Keep Alive Flag
 
 **Position**: bit 2 of the CONNACK Flags. Labelled *Server KA* in Figure 3-6.
 
@@ -2186,7 +2186,7 @@ Determines the presence of the Topic Alias field.
 
 Used to identify the corresponding REGACK packet. It should ideally be populated with a random Two Byte Integer value.
 
-### 3.4.3 Topic Alias 
+### 3.4.3 Topic Alias
 
 Contains the Topic Alias value assigned to the Topic Name included in the Topic Name field.
 
@@ -2594,7 +2594,7 @@ The values for Reason Codes are shown in «<mark title="Requirement MQTT-SN-3.6.
 
 As described in [[4.3.4 QoS 2: Exactly once delivery]](#qos-2-exactly-once-delivery).
 
-###  
+### 
 
 ### 3.6.7 PUBCOMP - Publish Complete (QoS 2 delivery part 3)
 
@@ -2942,7 +2942,7 @@ Values can be:
 
 ## 
 
-##  
+## 
 
 ## 3.13 DISCONNECT - Disconnect Notification
 
@@ -2968,7 +2968,7 @@ The DISCONNECT Flags is a 1 byte field which contains flags specifying the conte
 
 «<mark title="Requirement MQTT-SN-3.13.2-2"><a name="MQTT-SN-3.13.2-2"></a>The receiver MUST validate that the reserved flags in the DISCONNECT packet are set to 0. If any of the reserved flags is not 0 it is a Malformed Packet</mark>»\[MQTT‑SN‑3.13.2‑2].
 
-#### 3.13.2.1 Packet Identifier Flag 
+#### 3.13.2.1 Packet Identifier Flag
 
 **Position:** bit 0 of the DISCONNECT Flags. Labelled *PacketId* in Figure 3-27.
 
@@ -3284,47 +3284,27 @@ In general two types of protection scheme are considered: **Authentication only*
 
 *Figure 3-29 -- Protection Schemes*
 
-  -------------------------------------------------------------------------
-  **Index**           **Name**
-  ------------------- -----------------------------------------------------
-  0x00                HMAC-SHA256 (Note 1)
-
-  0x01                HMAC-SHA3_256 (Note 1)
-
-  0x02                CMAC-128 (Note 3)
-
-  0x03                CMAC-192 (Note 3)
-
-  0x04                CMAC-256 (Note 3)
-
-  0x05-0x3B           RESERVED
-
-  0x3C-0x3F           Provider defined
-
-  0x40                AES-CCM-64-128 (Notes 4,5)
-
-  0x41                AES-CCM-64-192 (Notes 4,5)
-
-  0x42                AES-CCM-64-256 (Notes 4,5)
-
-  0x43                AES-CCM-128-128 (Notes 4,5)
-
-  0x44                AES-CCM-128-192 (Notes 4,5)
-
-  0x45                AES-CCM-128-256 (Notes 4,5)
-
-  0x46                AES-GCM-128-128 (Notes 6,7)
-
-  0x47                AES-GCM-128-192 (Notes 6,7)
-
-  0x48                AES-GCM-128-256 (Notes 6,7)
-
-  0x49                ChaCha20/Poly1305 (Notes 8,9)
-
-  0x4A-0xEF           RESERVED
-
-  0xF0-0xFF           Provider defined
-  -------------------------------------------------------------------------
+| Index     | Name                          |
+|:----------|:------------------------------|
+| 0x00      | HMAC-SHA256 (Note 1)          |
+| 0x01      | HMAC-SHA3_256 (Note 1)        |
+| 0x02      | CMAC-128 (Note 3)             |
+| 0x03      | CMAC-192 (Note 3)             |
+| 0x04      | CMAC-256 (Note 3)             |
+| 0x05-0x3B | RESERVED                      |
+| 0x3C-0x3F | Provider defined              |
+| 0x40      | AES-CCM-64-128 (Notes 4,5)    |
+| 0x41      | AES-CCM-64-192 (Notes 4,5)    |
+| 0x42      | AES-CCM-64-256 (Notes 4,5)    |
+| 0x43      | AES-CCM-128-128 (Notes 4,5)   |
+| 0x44      | AES-CCM-128-192 (Notes 4,5)   |
+| 0x45      | AES-CCM-128-256 (Notes 4,5)   |
+| 0x46      | AES-GCM-128-128 (Notes 6,7)   |
+| 0x47      | AES-GCM-128-192 (Notes 6,7)   |
+| 0x48      | AES-GCM-128-256 (Notes 6,7)   |
+| 0x49      | ChaCha20/Poly1305 (Notes 8,9) |
+| 0x4A-0xEF | RESERVED                      |
+| 0xF0-0xFF | Provider defined              |
 
 **Note(s):**
 
@@ -3384,7 +3364,7 @@ The field Protected MQTT-SN Packet contains the MQTT-SN packet that is being sec
 
 The Authentication Tag field has a length that depends on the Authentication Tag Length. Its content authenticates ALL the preceding fields and is obtained on the basis of the protection scheme selected in the Protection Scheme field.
 
-##  
+## 
 
 ## 3.18 Connection Encapsulation
 
@@ -4704,7 +4684,7 @@ An MQTT-SN Server conforms to this specification only if it satisfies all the st
 
 4.  It does not require the use of any extensions defined outside of the specification in order to interoperate with any other conformant implementation.
 
-###  6.1.2 MQTT-SN Client conformance clause
+### 6.1.2 MQTT-SN Client conformance clause
 
 Refer to [[1.3 Terminology]](#terminology) for a definition of Client.
 
@@ -5108,7 +5088,7 @@ To support PUBWOS packets from MQTT-SN clients without a Virtual Connection, an 
 
 A hybrid Gateway may contain elements of both Aggregating and Transparent Gateways, using different approaches depending on the characteristics of the MQTT-SN Clients connecting to them.
 
-### C.1.3 Forwarder 
+### C.1.3 Forwarder
 
 An MQTT-SN Forwarder connects two networks which cannot transmit messages directly to and from each other. It serves as a bridge for MQTT-SN messages between the two networks, allowing MQTT-SN Clients in one to connect to an MQTT-SN Gateway in the other. The two networks could be Zigbee on one side and UDP on the other, for instance.
 
@@ -5140,7 +5120,7 @@ For CONNECT, PUBLISH, SUBSCRIBE and REGISTER requests, the Server may return the
 
 The requester should wait a reasonable amount of time (*[Congestion Delay)]* before sending a new request to the Server. What constitutes *a reasonable amount of time* depends on the implementation characteristics - it should be configured in the client application based on those. See [[C.4 Timer and Counter Values]](#c.3-example-timer-and-counter-values) for an example value.
 
-##  
+## 
 
 ## C.3 Example Timer and Counter Values
 
@@ -5150,9 +5130,9 @@ Figure C-6 gives some values for the timers and counters defined in this specifi
 
 To balance reaction speed with reliability, the tolerance of the sleep timers at the Server may depend on the values indicated by the clients. For example, the timer values may be 10% higher than the indicated values for periods larger than 1 minute, and 50% higher if less.
 
-##  
+## 
 
-## C.4 [Exponential Backoff](#c.4-exponential-backoff) 
+## C.4 [Exponential Backoff](#c.4-exponential-backoff)
 
 The *Retry Interval* for unacknowledged packets can be increased on each retry, to avoid overwhelming recipient network nodes while allowing efficient Virtual Connection reestablishment. The client periodically retries a failed packet with increasing delays between attempts, constrained by a Maximum Retry Interval, interleaved with a suitable seed of randomness.
 
@@ -5192,7 +5172,7 @@ The following diagrams are illustrative, graphical views of the states and trans
 
 ![](media/image27.jpg)<!-- .width="6.5in", .height="6.958333333333333in" -->
 
-##  
+## 
 
 ## C.6 PUBLISH with QoS -1
 
@@ -5246,7 +5226,7 @@ Set to 0.
 
 This flag signifies whether the message is published as a retained message or not. See [[4.13 Retained Messages]](#retained-messages) for more information.
 
-### C.6.3 Topic Alias 
+### C.6.3 Topic Alias
 
 Only present if the Topic Type is Predefined Topic Alias. Contain a Topic Alias which is preconfigured to be known to both the sender and receiver.
 
@@ -5278,7 +5258,7 @@ The Client or Server uses a PUBLISH QoS -1 packet to send an Application Message
 
 If received by a Client or Server, the PUBLISH QoS -1 packet is treated as if its QoS were 0 as described in [[3.6.3.7 PUBLISH Actions]](#publish-actions).
 
-##  
+## 
 
 ## C.7 Gateway Advertisement and Discovery
 
