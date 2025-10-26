@@ -3767,19 +3767,13 @@ The sender is NOT permitted to send further packets with different Packet Identi
 
 *Figure 4-4 -- QoS 1 protocol flow, informative example*
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Sender Action**                                  **MQTT-SN Control Packet**                  **Receiver action**
-  -------------------------------------------------- ------------------------------------------- --------------------------------------------------------
-  Store message                                                                                  
-
-  Send PUBLISH QoS 1, DUP=0, \<Packet Identifier\>   \-\-\-\-\-\-\-\-\--\>                       
-
-                                                                                                 Initiate onward delivery of the Application Message^1^
-
-                                                     \<\-\-\-\-\-\-\-\-\--                       Send PUBACK \<Packet Identifier\>
-
-  Discard message                                                                                
-  -------------------------------------------------------------------------------------------------------------------------------------------------------
+| Sender Action                                     | MQTT-SN Control Packet  | Receiver action                                         |
+|:--------------------------------------------------|:-----------------------:|:--------------------------------------------------------|
+| Store message                                     |                         |                                                         |
+| Send PUBLISH QoS 1, DUP=0, &lt;Packet Identifier> |  \-\-\-\-\-\-\-\-\-->   |                                                         |
+|                                                   |                         | Initiate onward delivery of the Application Message (1) |
+|                                                   | &lt;\-\-\-\-\-\-\-\-\-- | Send PUBACK &lt;Packet Identifier>                      |
+| Discard message                                   |                         |                                                         |
 
 > ^1^The receiver does not need to complete delivery of the Application Message before sending the PUBACK. When its original sender receives the PUBACK packet, ownership of the Application Message is transferred to the receiver.
 
