@@ -3821,41 +3821,21 @@ The Packet Identifier becomes available for reuse once the sender has received t
 
 *Figure 4-5 -- QoS 2 protocol flow, informative example*
 
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-| > **Sender Action**                         | > **MQTT-SN Control Packet**            | > **Receiver Action**                            |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-| > Store message                             |                                         |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-| > PUBLISH QoS 2, DUP=0\                     |                                         |                                                  |
-| > \<Packet Identifier\>                     |                                         |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             | > \-\-\-\-\-\-\-\-\--\>                 |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             |                                         | > Store \<Packet Identifier\> and message        |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             |                                         | > PUBREC \<Packet Identifier\>\<Reason Code\>    |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             | > \<\-\-\-\-\-\-\-\-\--                 |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-| > Discard message, Store PUBREC received    |                                         |                                                  |
-| > \<Packet Identifier\>                     |                                         |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-| > PUBREL \<Packet Identifier\>              |                                         |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             | > \-\-\-\-\-\-\-\-\--\>                 |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             |                                         | > Initiate onward delivery of the Application    |
-|                                             |                                         | > Message^1^                                     |
-|                                             |                                         | >                                                |
-|                                             |                                         | > then discard the message and \<Packet          |
-|                                             |                                         | > Identifier\>                                   |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             |                                         | > Send PUBCOMP \<Packet Identifier\>             |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-|                                             | > \<\-\-\-\-\-\-\-\-\--                 |                                                  |
-+---------------------------------------------+-----------------------------------------+--------------------------------------------------+
-| > Discard stored state                      |                                         |                                                  |
-+=============================================+=========================================+==================================================+
+| **Sender Action**                                             | **MQTT-SN Control Packet** | **Receiver Action**                                                                                                 |
+|:--------------------------------------------------------------|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------|
+| Store message                                                 |                            |                                                                                                                     |
+| PUBLISH QoS 2, DUP=0&lt;Packet Identifier>                    |                            |                                                                                                                     |
+|                                                               |   \-\-\-\-\-\-\-\-\--\>    |                                                                                                                     |
+|                                                               |                            | Store &lt;Packet Identifier> and message                                                                            |
+|                                                               |                            | PUBREC &lt;Packet Identifier>&lt;Reason Code>                                                                       |
+|                                                               |  &lt;\-\-\-\-\-\-\-\-\--   |                                                                                                                     |
+| Discard message, Store PUBREC received &lt;Packet Identifier> |                            |                                                                                                                     |
+| PUBREL &lt;Packet Identifier>                                 |                            |                                                                                                                     |
+|                                                               |   \-\-\-\-\-\-\-\-\--\>    |                                                                                                                     |
+|                                                               |                            | Initiate onward delivery of the Application Message^1^ <br><br> then discard the message and &lt;Packet Identifier> |
+|                                                               |                            | Send PUBCOMP &lt;Packet Identifier>                                                                                 |
+|                                                               |  &lt;\-\-\-\-\-\-\-\-\--   |                                                                                                                     |
+| Discard stored state                                          |                            |                                                                                                                     |
 
 > ^1^ The receiver does not need to complete delivery of the Application Message before sending the PUBREC or PUBCOMP. When its original sender receives the PUBREC packet, ownership of the Application Message is transferred to the receiver. However, the receiver needs to perform all checks for conditions which might result in a forwarding failure (for example, quota exceeded or authorization) before accepting ownership. The receiver indicates success or failure using the appropriate Reason Code in the PUBREC.
 
