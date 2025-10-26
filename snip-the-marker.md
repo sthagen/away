@@ -258,17 +258,17 @@ The set of Unicode Control Codes and Unicode Noncharacters which should not be i
 
 <mark title="Ephemeral region marking">Work Product title (italicized). Edited by Albert Alston, Bob Ballston, and Calvin Carlson. Approval date (DD Month YYYY). OASIS Stage Identifier and Revision Number (e.g., OASIS Committee Specification Draft 01). Principal URI (stage-specific URI, e.g., with stage component: somespec-v1.0-csd01.html). Latest stage: (static URI, without stage identifiers, used as a symbolic link to most recently published stage of this Version).</mark>
 
-[]{.mark}
+
 
 <mark title="Ephemeral region marking">For example:</mark>
 
-[]{.mark}
+
 
 **<mark title="Ephemeral region marking">\[OpenDoc-1.2\]</mark>**
 
 <mark title="Ephemeral region marking">Open Document Format for Office Applications (OpenDocument) Version 1.2. Edited by Patrick Durusau and Michael Brauer. 19 January 2011. OASIS Committee Specification Draft 07. https://docs.oasis-open.org/office/v1.2/csd07/OpenDocument-v1.2-csd07.html. Latest stage: https://docs.oasis-open.org/office/v1.2/OpenDocument-v1.2.html.</mark>
 
-[]{.mark}
+
 
 <mark title="Ephemeral region marking">Reference sources:</mark>
 
