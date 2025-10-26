@@ -1,6 +1,6 @@
 # 1 Introduction
 
-\\[<mark title="Ephemeral region marking">All text is normative unless otherwise labeled</mark>\]
+\[<mark title="Ephemeral region marking">All text is normative unless otherwise labeled</mark>\]
 
 ## 1.0 Intellectual property rights policy
 
