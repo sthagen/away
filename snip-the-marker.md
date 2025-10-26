@@ -1,6 +1,6 @@
 # 1 Introduction
 
-\<mark title="Ephemeral region marking">[All text is normative unless otherwise labeled</mark>\]
+\[<mark title="Ephemeral region marking">All text is normative unless otherwise labeled</mark>\]
 
 ## 1.0 Intellectual property rights policy
 
@@ -240,7 +240,7 @@ The set of Unicode Control Codes and Unicode Noncharacters which should not be i
 
 ## 1.4 Normative references
 
-<mark title="Ephemeral region marking">\[Required section.\]</mark>
+[\<mark title="Ephemeral region marking">Required section.\]</mark>
 
 <mark title="Ephemeral region marking">This appendix contains the normative and informative references that are used in this document.</mark>
 
@@ -250,11 +250,11 @@ The set of Unicode Control Codes and Unicode Noncharacters which should not be i
 
 <mark title="Ephemeral region marking">For all References -- Normative and Informative:</mark>
 
-<mark title="Ephemeral region marking">Recommended approach: Set up **\[Reference\]** label elements as \"Bookmarks\", then create hyperlinks to them within the document at locations from which the references are cited. Citations in the body of the text should be hyperlinked to the appropriate Reference entry, not directly to targets which are not a part of this Work Product.</mark>
+[Recommended approach: Set up **\<mark title="Ephemeral region marking">Reference\]** label elements as \"Bookmarks\", then create hyperlinks to them within the document at locations from which the references are cited. Citations in the body of the text should be hyperlinked to the appropriate Reference entry, not directly to targets which are not a part of this Work Product.</mark>
 
 <mark title="Ephemeral region marking">The proper format for citation of technical work produced by an OASIS TC (whether Standards Track or Non-Standards Track) is:</mark>
 
-<mark title="Ephemeral region marking">**\[Citation Label\]**</mark>
+[**\<mark title="Ephemeral region marking">Citation Label\]**</mark>
 
 <mark title="Ephemeral region marking">Work Product title (italicized). Edited by Albert Alston, Bob Ballston, and Calvin Carlson. Approval date (DD Month YYYY). OASIS Stage Identifier and Revision Number (e.g., OASIS Committee Specification Draft 01). Principal URI (stage-specific URI, e.g., with stage component: somespec-v1.0-csd01.html). Latest stage: (static URI, without stage identifiers, used as a symbolic link to most recently published stage of this Version).</mark>
 
@@ -264,7 +264,7 @@ The set of Unicode Control Codes and Unicode Noncharacters which should not be i
 
 []{.mark}
 
-**<mark title="Ephemeral region marking">\[OpenDoc-1.2\]</mark>**
+**[\<mark title="Ephemeral region marking">OpenDoc-1.2\]</mark>**
 
 <mark title="Ephemeral region marking">Open Document Format for Office Applications (OpenDocument) Version 1.2. Edited by Patrick Durusau and Michael Brauer. 19 January 2011. OASIS Committee Specification Draft 07. https://docs.oasis-open.org/office/v1.2/csd07/OpenDocument-v1.2-csd07.html. Latest stage: https://docs.oasis-open.org/office/v1.2/OpenDocument-v1.2.html.</mark>
 
@@ -274,13 +274,13 @@ The set of Unicode Control Codes and Unicode Noncharacters which should not be i
 
 <mark title="Ephemeral region marking">For references to IETF RFCs, use the approved citation formats at:</mark>
 
-<mark title="Ephemeral region marking">[[https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html]](https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html).</mark>
+[[<mark title="Ephemeral region marking">https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html]](https://docs.oasis-open.org/templates/ietf-rfc-list/ietf-rfc-list.html).</mark>
 
-<mark title="Ephemeral region marking">The most recent IETF RFC references are listed by the IETF at [[https://www.rfc-editor.org/in-notes/rfc-ref.txt]](https://www.rfc-editor.org/in-notes/rfc-ref.txt).</mark>
+[The most recent IETF RFC references are listed by the IETF at [<mark title="Ephemeral region marking">https://www.rfc-editor.org/in-notes/rfc-ref.txt]](https://www.rfc-editor.org/in-notes/rfc-ref.txt).</mark>
 
 <mark title="Ephemeral region marking">For references to W3C Recommendations, use the approved citation formats at:</mark>
 
-<mark title="Ephemeral region marking">[[https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html]](https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html).</mark>
+[[<mark title="Ephemeral region marking">https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html]](https://docs.oasis-open.org/templates/w3c-recommendations-list/w3c-recommendations-list.html).</mark>
 
 <mark title="Ephemeral region marking">Remove this note before submitting for publication.</mark>
 
@@ -290,9 +290,9 @@ Bradner, S., \"Key words for use in RFCs to Indicate Requirement Levels\", BCP 1
 
 [[http://www.rfc-editor.org/info/rfc2119]](http://www.rfc-editor.org/info/rfc2119)
 
-<mark title="Ephemeral region marking">\[RFC8174\]</mark>
+[\<mark title="Ephemeral region marking">RFC8174\]</mark>
 
-<mark title="Ephemeral region marking">Leiba, B., \"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words\", BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017, \<[[https://www.rfc-editor.org/info/rfc8174]](https://www.rfc-editor.org/info/rfc8174)\>.</mark>
+[Leiba, B., \"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words\", BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017, \<[<mark title="Ephemeral region marking">https://www.rfc-editor.org/info/rfc8174]](https://www.rfc-editor.org/info/rfc8174)\>.</mark>
 
 **\[RFC3629\]**
 
@@ -314,13 +314,13 @@ The Unicode Consortium. The Unicode Standard,
 
 ## 1.5 Informative References
 
-<mark title="Ephemeral region marking">\[RFC3552\]</mark>
+[\<mark title="Ephemeral region marking">RFC3552\]</mark>
 
-<mark title="Ephemeral region marking">Rescorla, E. and B. Korver, \"Guidelines for Writing RFC Text on Security Considerations\", BCP 72, RFC 3552, DOI 10.17487/RFC3552, July 2003, \<[[https://www.rfc-editor.org/info/rfc3552]](https://www.rfc-editor.org/info/rfc3552)\>.</mark>
+[Rescorla, E. and B. Korver, \"Guidelines for Writing RFC Text on Security Considerations\", BCP 72, RFC 3552, DOI 10.17487/RFC3552, July 2003, \<[<mark title="Ephemeral region marking">https://www.rfc-editor.org/info/rfc3552]](https://www.rfc-editor.org/info/rfc3552)\>.</mark>
 
-<mark title="Ephemeral region marking">\[Reference\]</mark>
+[\<mark title="Ephemeral region marking">Reference\]</mark>
 
-<mark title="Ephemeral region marking">\[Full reference citation\]</mark>
+[\<mark title="Ephemeral region marking">Full reference citation\]</mark>
 
 ## 1.6 MQTT For Sensor Networks (MQTT-SN)
 
