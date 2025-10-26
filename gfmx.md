@@ -3733,15 +3733,11 @@ In the QoS 0 delivery protocol, the receiver
 
 *Figure 4-3 -- QoS 0 protocol flow, informative example*
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Sender Action**                               **Control Packet**                          **Receiver Action**
-  ----------------------------------------------- ------------------------------------------- ----------------------------------------------------------------
-  PUBLISH QoS 0                                                                               
-
-                                                  \-\-\-\-\-\-\-\-\--\>                       
-
-                                                                                              Deliver Application Message to appropriate onward recipient(s)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Sender Action |    Control Packet    | Receiver action                                                |
+|:--------------|:--------------------:|:---------------------------------------------------------------|
+| PUBLISH QoS 0 |                      |                                                                |
+|               | \-\-\-\-\-\-\-\-\--> |                                                                |
+|               |                      | Deliver Application Message to appropriate onward recipient(s) |
 
 ### 4.3.3 QoS 1: At least once delivery
 
