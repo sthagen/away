@@ -1168,7 +1168,7 @@ Unless stated otherwise all variable length UTF-8 encoded strings can have any l
 
 *Figure 1-1 -- Structure of UTF-8 Encoded Strings*
 
-![](media/image6.png)<!-- .width="6.5in", .height="1.0277777777777777in" -->
+![](media/image14.png)<!-- .width="6.5in", .height="1.0277777777777777in" -->
 
 «<mark title="Requirement MQTT-SN-1.7.4-1"><a name="MQTT-SN-1.7.4-1"></a>The character data in a UTF-8 Encoded String MUST be well-formed UTF-8 as defined by the Unicode specification [\[Unicode\]](#Unicode) and restated in RFC 3629 [\[RFC3629\]](#RFC3629). In particular, the character data MUST NOT include encodings of code points between U+D800 and U+DFFF</mark>»\[MQTT‑SN‑1.7.4‑1].
 
@@ -1192,7 +1192,7 @@ UTF-8 Encoded Strings SHOULD NOT include the Unicode \[Unicode\] code points lis
 
 *Figure 1-2 -- Fixed Length UTF-8 Encoded String informative example*
 
-> ![](media/image40.png)<!-- .width="6.5in", .height="2.5972222222222223in" -->
+> ![](media/image31.png)<!-- .width="6.5in", .height="2.5972222222222223in" -->
 
 # 2 MQTT-SN Control Packet format
 
@@ -1217,11 +1217,11 @@ Each MQTT-SN Control Packet contains a Header of format 1 or format 2 as shown b
 
 *Figure 2-2 -- Packet Header Format 1*
 
-![](media/image3.png)<!-- .width="6.5in", .height="0.7222222222222222in" -->
+![](media/image12.png)<!-- .width="6.5in", .height="0.7222222222222222in" -->
 
 *Figure 2-3 -- Packet Header Format 2*
 
-![](media/image13.png)<!-- .width="6.5in", .height="1.1944444444444444in" -->
+![](media/image16.png)<!-- .width="6.5in", .height="1.1944444444444444in" -->
 
 ### 2.1.2 Length
 
@@ -1404,7 +1404,7 @@ The Client and Server assign Packet Identifiers independently of each other. As 
 >
 > It is possible for a Client to send a PUBLISH packet with Packet Identifier 0x1234 and then receive a different PUBLISH packet with Packet Identifier 0x1234 from its Server before it receives a PUBACK for the PUBLISH packet that it sent.
 
-*Figure 2-6 - Publishes with the same Packet Identifier*![](media/image4.png)<!-- .width="5.2in", .height="3.2303029308836395in" -->
+*Figure 2-6 - Publishes with the same Packet Identifier*![](media/image13.png)<!-- .width="5.2in", .height="3.2303029308836395in" -->
 
 ## 2.3 Reason Code
 
@@ -1651,7 +1651,7 @@ Refer to [[4.7 Topics]](#topics) for detailed descriptions of Topic Names and To
 
 *Figure 3-1 -- CONNECT Packet*
 
-![](media/image22.png)<!-- .width="5.2in", .height="8.075757874015748in" -->
+![](media/image26.png)<!-- .width="5.2in", .height="8.075757874015748in" -->
 
 The CONNECT packet is sent from the Client to the Server to request the creation of or continuation of a Session.
 
@@ -1978,7 +1978,7 @@ If validation is successful, the Server performs the following steps.
 
 *Figure 3-3 -- CONNACK Packet*
 
-![](media/image5.png)<!-- .width="6.5in", .height="7.291666666666667in" -->
+![](media/image6.png)<!-- .width="6.5in", .height="7.291666666666667in" -->
 
 The CONNACK packet is sent by the Server in response to a CONNECT request from a client.
 
@@ -2110,7 +2110,7 @@ It is suggested that the 36 character Universally Unique IDentifier (UUID) forma
 
 *Figure 3-4 -- AUTH Packet*
 
-![](media/image30.png)<!-- .width="6.5in", .height="3.2222222222222223in" -->
+![](media/image8.png)<!-- .width="6.5in", .height="3.2222222222222223in" -->
 
 <mark title="Ephemeral region marking">The authentication method and data is first sent by the Client as part of a CONNECT exchange. If the Server requires additional information to complete the authentication, it responds with an AUTH packet to signal that the Client generates and sends another AUTH packet with the required information and so on until the authentication is complete. The server then responds with a CONNACK message.</mark>
 
@@ -2146,7 +2146,7 @@ Refer to [[4.11 Authentication]](#authentication) for more information about aut
 
 *Figure 3-5 -- REGISTER Packet*
 
-![](media/image27.png)<!-- .width="6.5in", .height="3.375in" -->
+![](media/image39.png)<!-- .width="6.5in", .height="3.375in" -->
 
 A REGISTER packet is sent by a Client or Server to create a Session Topic Alias, before sending a PUBLISH with that Session Topic Alias.
 
@@ -2282,7 +2282,7 @@ The table below shows the two packet types.
 
 *Figure 3-8 -- PUBWOS Packet*
 
-![](media/image2.png)<!-- .width="6.5in", .height="3.4583333333333335in" -->
+![](media/image3.png)<!-- .width="6.5in", .height="3.4583333333333335in" -->
 
 This packet is used by both clients and Servers to publish data for a certain topic.
 
@@ -2344,7 +2344,7 @@ The Client or Server uses a PUBWOS packet to send an Application Message to a Ne
 
 *Figure 3-9 -- PUBLISH Packet for QoS 0*
 
-![](media/image14.png)<!-- .width="6.5in", .height="3.4583333333333335in" -->
+![](media/image19.png)<!-- .width="6.5in", .height="3.4583333333333335in" -->
 
 A PUBLISH packet is sent from a Client to a Server or from a Server to a Client to transport an Application Message.
 
@@ -2404,7 +2404,7 @@ As described in [[3.6.3.7 PUBLISH Actions]](#publish-actions).
 
 *Figure 3-10 -- PUBLISH Packet for QoS 1 and 2*
 
-![](media/image25.png)<!-- .width="6.5in", .height="3.9305555555555554in" -->
+![](media/image11.png)<!-- .width="6.5in", .height="3.9305555555555554in" -->
 
 A PUBLISH packet is sent from a Client to a Server or from a Server to a Client to transport an Application Message.
 
@@ -2626,7 +2626,7 @@ As described in [[4.3.4 QoS 2: Exactly once delivery]](#qos-2-exactly-once-deliv
 
 *Figure 3-17 -- SUBSCRIBE Packet*
 
-![](media/image12.png)<!-- .width="6.5in", .height="3.375in" -->
+![](media/image7.png)<!-- .width="6.5in", .height="3.375in" -->
 
 The SUBSCRIBE packet is sent from the Client to the Server to create one or more Subscriptions. A Subscription registers a Client's interest in one or more Topics. The Server sends PUBLISH packets to the Client to forward Application Messages that were published to Topics that match the Subscription. The SUBSCRIBE packet also specifies the maximum QoS with which the Server can send Application Messages to the Client.
 
@@ -2734,7 +2734,7 @@ If a Server receives a Topic Filter that is not identical to any Topic Filter fo
 
 *Figure 3-18 -- SUBACK Packet*
 
-![](media/image11.png)<!-- .width="6.5in", .height="2.5555555555555554in" -->
+![](media/image4.png)<!-- .width="6.5in", .height="2.5555555555555554in" -->
 
 The SUBACK packet is sent by a Server to a client as an acknowledgment to the receipt and processing of a SUBSCRIBE packet.
 
@@ -2788,7 +2788,7 @@ The values of Reason Codes are shown in «<mark title="Requirement MQTT-SN-3.8.5
 
 *Figure 3-19 -- UNSUBSCRIBE Packet*
 
-![](media/image26.png)<!-- .width="6.5in", .height="3.375in" -->
+![](media/image25.png)<!-- .width="6.5in", .height="3.375in" -->
 
 An UNSUBSCRIBE packet is sent by the Client to the Server to remove subscriptions to topics.
 
@@ -2870,7 +2870,7 @@ The UNSUBACK Reason Codes are shown in «<mark title="Requirement MQTT-SN-3.10.3
 
 *Figure 3-21 -- PINGREQ Packet*
 
-![](media/image41.png)<!-- .width="6.5in", .height="1.1944444444444444in" -->
+![](media/image36.png)<!-- .width="6.5in", .height="1.1944444444444444in" -->
 
 The PINGREQ packet is sent from a Client to the Server. It can be used to:
 
@@ -2904,7 +2904,7 @@ Used to identify the corresponding PINGRESP packet. It should ideally be set to 
 
 *Figure 3-22 -- PINGRESP Packet*
 
-![](media/image24.png)<!-- .width="6.5in", .height="1.4166666666666667in" -->
+![](media/image17.png)<!-- .width="6.5in", .height="1.4166666666666667in" -->
 
 A PINGRESP Packet is sent by the Server to the Client in response to a PINGREQ packet. It indicates that the Server is alive.
 
@@ -2948,7 +2948,7 @@ Values can be:
 
 *Figure 3-24 -- DISCONNECT Packet*
 
-![](media/image33.png)<!-- .width="6.5in", .height="4.555555555555555in" -->
+![](media/image34.png)<!-- .width="6.5in", .height="4.555555555555555in" -->
 
 The DISCONNECT packet is sent by a Client to indicate that it is going to delete the Virtual connection and go to the Disconnected state.
 
@@ -3040,7 +3040,7 @@ After receiving a DISCONNECT, a Client can make a new Virtual Connection by send
 
 *Figure 3-25 -- WAKEUP Packet*
 
-![](media/image15.png)<!-- .width="6.5in", .height="0.7222222222222222in" -->
+![](media/image18.png)<!-- .width="6.5in", .height="0.7222222222222222in" -->
 
 The wakeup packet is a signal sent from the Server to a client. It is an indication from the Server that the client should wake up. The client is not obliged to honor this request, nor may it even receive the packet. It can choose to ignore the request, or undertake one of the sequences outlined in [[4.14.2 Sleeping Clients]](#sleeping-clients). The client need not respond to this packet.
 
@@ -3056,7 +3056,7 @@ The first 2 or 4 bytes of the packet are encoded according to the variable lengt
 
 *Figure 3-26 -- SLEEPREQ Packet*
 
-![](media/image31.png)<!-- .width="6.5in", .height="2.8333333333333335in" -->
+![](media/image28.png)<!-- .width="6.5in", .height="2.8333333333333335in" -->
 
 The SLEEPREQ packet is sent from the Client to the Server to indicate that it is going to sleep (moving to the Asleep state).
 
@@ -3122,7 +3122,7 @@ A Client might not wait, or might stop waiting, if it is concerned that it will 
 
 *Figure 3-27 -- SLEEPRESP Packet*
 
-![](media/image20.png)<!-- .width="6.5in", .height="2.9722222222222223in" -->
+![](media/image21.png)<!-- .width="6.5in", .height="2.9722222222222223in" -->
 
 ### 3.16.1 SLEEPRESP Header
 
@@ -3168,7 +3168,7 @@ The values for Reason Codes are shown in «<mark title="Requirement MQTT-SN-3.16
 
 *Figure 3-28 -- Format of an Protection Encapsulated MQTT-SN Packet*
 
-![](media/image39.png)<!-- .width="6.5in", .height="6.347222222222222in" -->
+![](media/image24.png)<!-- .width="6.5in", .height="6.347222222222222in" -->
 
 Protection encapsulation provides a secure envelope for any MQTT-SN packet (with the exception of the Forward Encapsulation packet). The fields provided by the Protection Encapsulation provide a means by which the sender is identified and the packet is protected, using a number of prescribed protection schemes. Where the phrase "protected Packet" is used in this document, it means an MQTT-SN Packet surrounded by the Protection Encapsulation.
 
@@ -3390,7 +3390,7 @@ The Authentication Tag field has a length that depends on the Authentication Tag
 
 *Figure 3-30 -- Format of a Connection Encapsulated MQTT-SN Packet*
 
-![](media/image45.png)<!-- .width="6.5in", .height="2.2777777777777777in" -->
+![](media/image35.png)<!-- .width="6.5in", .height="2.2777777777777777in" -->
 
 This envelope wraps an MQTT-SN Packet to allow it to be associated with an existing Virtual Connection where other methods are not sufficient. Only Clients can use the Connection Encapsulation because it is assumed that the Network Address for the Server is static for the duration of the Virtual Connection. If the Server Network Address is not static, then another method of identifying the Packet sender must be used, such as the Protection Encapsulation or DTLS.
 
@@ -3462,7 +3462,7 @@ The Packets in this section are optional. A description of how this functionalit
 
 *Figure 3-32 -- ADVERTISE Packet*
 
-![](media/image7.png)<!-- .width="6.5in", .height="1.4166666666666667in" -->
+![](media/image23.png)<!-- .width="6.5in", .height="1.4166666666666667in" -->
 
 The ADVERTISE packet is sent periodically by a Gateway to advertise its presence. The time interval until the next transmission is indicated by the *Duration* field.
 
@@ -3490,7 +3490,7 @@ The maximum value that can be encoded is approximately 18 hours.
 
 *Figure 3-33 -- SEARCHGW Packet*
 
-![](media/image44.png)<!-- .width="6.5in", .height="1.5in" -->
+![](media/image30.png)<!-- .width="6.5in", .height="1.5in" -->
 
 The SEARCHGW packet is sent by a Client to find a Gateway to send Application Messages to, and receive Application Messages from.
 
@@ -3518,7 +3518,7 @@ This field is optional - its existence or absence is inferred from the Packet le
 
 *Figure 3-34 -- GWINFO Packet*
 
-![](media/image19.png)<!-- .width="6.5in", .height="1.7361111111111112in" -->
+![](media/image32.png)<!-- .width="6.5in", .height="1.7361111111111112in" -->
 
 The GWINFO packet is sent as response to a SEARCHGW packet. If sent by a Gateway, it contains only the identifier of the sending Gateway; otherwise, if sent by a client, it also includes the Network Address of the Gateway.
 
@@ -3598,11 +3598,11 @@ The CONNECT packet contains flags to communicate to the Server that authenticati
 
 *Figure 4-1 -- Connect Procedure (without Auth flag set, or no further authentication data required)*
 
-![](media/image17.png)<!-- .width="3.344815179352581in", .height="2.4173436132983377in" -->
+![](media/image15.png)<!-- .width="3.344815179352581in", .height="2.4173436132983377in" -->
 
 *Figure 4-2 -- Connect Procedure (with Auth flag set and further authentication data required)*
 
-![](media/image35.png)<!-- .width="3.345165135608049in", .height="2.963542213473316in" -->
+![](media/image33.png)<!-- .width="3.345165135608049in", .height="2.963542213473316in" -->
 
 If the Server can not accept the CONNECT request the Server returns a CONNACK packet with the rejection Reason Code.
 
@@ -4265,7 +4265,7 @@ This is a one-way transfer of information - the response MUST be a CONNACK, not 
 
 *Figure 4-6 -- CONNECT with MQTT User Name and Password, informative example*
 
-![](media/image43.png)<!-- .width="6.5in", .height="7.430555555555555in" -->
+![](media/image20.png)<!-- .width="6.5in", .height="7.430555555555555in" -->
 
 To support the equivalent of the MQTT User Name and Password together with MQTT Enhanced Authentication, in the CONNECT packet do the following:
 
@@ -4487,7 +4487,7 @@ Session Topic Aliases last for the duration of a Session which exists throughout
 
 *Figure 4-9 -- Awake PINGRESP Packet flush*
 
-![](media/image37.png)<!-- .width="4.615764435695538in", .height="7.453125546806649in" -->
+![](media/image2.png)<!-- .width="4.615764435695538in", .height="7.453125546806649in" -->
 
 ## 4.15 Optional Features
 
@@ -5471,7 +5471,7 @@ Although the implementation of the Transparent Gateway may be somewhat simpler t
 
 *Figure C-1 -- Transparent Gateway*
 
-> ![](media/image42.png)<!-- .width="3.994792213473316in", .height="2.6661472003499562in" -->
+> ![](media/image40.png)<!-- .width="3.994792213473316in", .height="2.6661472003499562in" -->
 
 Because PUBWOS packets could be sent at any time by Clients with no Virtual Connection, a Transparent Gateway would need to maintain a dedicated MQTT connection with the MQTT Server to support those packets.
 
@@ -5481,7 +5481,7 @@ Instead of having one MQTT connection for each connected MQTT-SN Client, an aggr
 
 *Figure C-2 -- Aggregating Gateway*
 
-![](media/image28.png)<!-- .width="4.578125546806649in", .height="3.0552755905511813in" -->
+![](media/image10.png)<!-- .width="4.578125546806649in", .height="3.0552755905511813in" -->
 
 To support PUBWOS packets from MQTT-SN clients without a Virtual Connection, an Aggregating may use any aggregating MQTT connection to forward those packets to an MQTT Server.
 
@@ -5495,11 +5495,11 @@ The following diagrams illustrate how a Forwarder may interact with an Aggregati
 
 *Figure C-3 -- Forwarder with Transparent Gateway*
 
-![](media/image16.png)<!-- .width="4.704773622047244in", .height="2.7964599737532807in" -->
+![](media/image22.png)<!-- .width="4.704773622047244in", .height="2.7964599737532807in" -->
 
 *Figure C-4 -- Forwarder with Aggregating Gateway*
 
-![](media/image34.png)<!-- .width="4.9003171478565175in", .height="2.8304625984251968in" -->
+![](media/image29.png)<!-- .width="4.9003171478565175in", .height="2.8304625984251968in" -->
 
 ### C.1.4 MQTT-SN Broker
 
@@ -5509,7 +5509,7 @@ It will allow MQTT-SN Clients to set up subscriptions, and publish messages to o
 
 *Figure C-5 -- MQTT-SN Broker*
 
-![](media/image29.png)<!-- .width="2.8596172353455818in", .height="2.983947944006999in" -->
+![](media/image37.png)<!-- .width="2.8596172353455818in", .height="2.983947944006999in" -->
 
 An MQTT-SN Server may choose to incorporate elements of a Broker, Aggregating and Transparent Gateway together. Typically, an Aggregating Gateway will also act as an MQTT-SN Broker.
 
@@ -5565,11 +5565,11 @@ The following diagrams are illustrative, graphical views of the states and trans
 
 *Figure C-7 -- Server View of Client States - informative*
 
-![](media/image23.jpg)<!-- .width="6.5in", .height="6.958333333333333in" -->
+![](media/image27.jpg)<!-- .width="6.5in", .height="6.958333333333333in" -->
 
 *Figure C-8 -- Server View of Client States - informative*
 
-![](media/image23.jpg)<!-- .width="6.5in", .height="6.958333333333333in" -->
+![](media/image27.jpg)<!-- .width="6.5in", .height="6.958333333333333in" -->
 
 ##  
 
@@ -5577,7 +5577,7 @@ The following diagrams are illustrative, graphical views of the states and trans
 
 *Figure C-9 -- PUBLISH Packet for QoS -1*
 
-![](media/image36.png)<!-- .width="6.5in", .height="5.569444444444445in" -->
+![](media/image5.png)<!-- .width="6.5in", .height="5.569444444444445in" -->
 
 This packet is the MQTT-SN 1.2 equivalent of PUBWOS. It could be supported by a Server if there are existing MQTT-SN 1.2 transmitters that the Server wants to listen to, or receivers it wants to send to. Implementation of this packet is optional.
 
